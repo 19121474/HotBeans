@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HotBeans | Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Add custom CSS here */
+      .main__content form input[type="text"],
+      .main__content form input[type="email"],
+      .main__content form input[type="tel"],
+      .main__content form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+
+      .main__content form .main__btn {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- Navbar code here -->
+    </nav>
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Application Form</h1>
+          <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="main__btn">Submit</button>
+          </form>
+        </div>
+        <div class="main__img-container"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
